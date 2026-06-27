@@ -9,6 +9,7 @@
 
 import Link from "next/link";
 import { formatDistanceToNow } from "date-fns";
+import { DASHBOARD_ROUTES } from "@/features/dashboard/lib/routes";
 
 
 import type {
@@ -141,7 +142,7 @@ function PullRequestRow({
       <div className="flex flex-wrap items-center gap-2">
         <GitPullRequestIcon className="size-4 shrink-0 text-muted-foreground" />
         <Link
-          href={`/dashboard/pull-requests/${pullRequest.id}`}
+          href={`${DASHBOARD_ROUTES.pullRequest}/${pullRequest.id}`}
           className="font-medium hover:underline"
         >
           {pullRequest.title}
