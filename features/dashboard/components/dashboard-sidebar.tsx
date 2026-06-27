@@ -33,7 +33,7 @@ export function DashboardSidebar({ user, plan = "Pro" }: DashboardSidebarProps) 
               size="lg"
               tooltip="ChaiCodeAIReview"
               render={
-                <Link href={DASHBOARD_ROUTES.overview}>
+                <Link href="/">
                   <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-none bg-sidebar">
                     <Image
                       src="/wolf_image.png"
